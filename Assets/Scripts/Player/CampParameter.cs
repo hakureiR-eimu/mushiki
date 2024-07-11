@@ -7,49 +7,49 @@ public class CampParameter : MonoBehaviour
     /// <summary>
     /// 经济总量
     /// </summary>
-    public float totalEconomy;
+    public int totalEconomy;
     /// <summary>
     /// 经济增量
     /// </summary>
-    public float economicIncrement;
+    public int economicIncrement;
     /// <summary>
     /// 政治值
     /// </summary>
-    public float politicalValue;
+    public int politicalValue;
     /// <summary>
     /// 文化值
     /// </summary>
-    public float culturalValue;
+    public int culturalValue;
     /// <summary>
     /// 科技值
     /// </summary>
-    public float technologyValue;
+    public int technologyValue;
     /// <summary>
     /// 民众信任度
     /// </summary>
-    public float publicTrust;
+    public int publicTrust;
     /// <summary>
     /// 特殊民众信任度（美国专用，其他国家默认为-100）
     /// </summary>
-    public float publicTrustP = -100;
+    public int publicTrustP = -100;
     /// <summary>
     /// 对内舆论控制了
     /// </summary>
-    public float internalControl;
+    public int internalControl;
     /// <summary>
     /// 对外舆论控制了
     /// </summary>
-    public float externalControl;
+    public int externalControl;
     /// <summary>
     /// 与NPC的关系
     /// </summary>
-    public List<float> relationWithNPCs;
+    public List<int> relationWithNPCs;
     /// <summary>
     /// 军事筹码
     /// </summary>
-    public float militaryChips;
+    public int militaryChips;
     /// <summary>
     /// 军事值
     /// </summary>
-    public float militaryValue;
+    public int militaryValue;
 }
