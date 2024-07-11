@@ -5,51 +5,51 @@ public class CampParameter : MonoBehaviour
 {
     public string campName;
     /// <summary>
-    /// ¾­¼Ã×ÜÁ¿
+    /// ç»æµæ€»é‡1
     /// </summary>
     public int totalEconomy;
     /// <summary>
-    /// ¾­¼ÃÔöÁ¿
+    /// ç»æµå¢é‡
     /// </summary>
     public int economicIncrement;
     /// <summary>
-    /// ÕşÖÎÖµ
+    /// æ”¿æ²»å€¼
     /// </summary>
     public int politicalValue;
     /// <summary>
-    /// ÎÄ»¯Öµ
+    /// æ–‡åŒ–å€¼
     /// </summary>
     public int culturalValue;
     /// <summary>
-    /// ¿Æ¼¼Öµ
+    /// ç§‘æŠ€å€¼
     /// </summary>
     public int technologyValue;
     /// <summary>
-    /// ÃñÖÚĞÅÈÎ¶È
+    /// æ°‘ä¼—ä¿¡ä»»åº¦
     /// </summary>
     public int publicTrust;
     /// <summary>
-    /// ÌØÊâÃñÖÚĞÅÈÎ¶È£¨ÃÀ¹ú×¨ÓÃ£¬ÆäËû¹ú¼ÒÄ¬ÈÏÎª-100£©
+    /// ç‰¹æ®Šæ°‘ä¼—ä¿¡ä»»åº¦ï¼ˆç¾å›½ä¸“ç”¨ï¼Œå…¶ä»–å›½å®¶é»˜è®¤ä¸º-100ï¼‰
     /// </summary>
     public int publicTrustP = -100;
     /// <summary>
-    /// ¶ÔÄÚÓßÂÛ¿ØÖÆÁË
+    /// å¯¹å†…èˆ†è®ºæ§åˆ¶äº†
     /// </summary>
     public int internalControl;
     /// <summary>
-    /// ¶ÔÍâÓßÂÛ¿ØÖÆÁË
+    /// å¯¹å¤–èˆ†è®ºæ§åˆ¶äº†
     /// </summary>
     public int externalControl;
     /// <summary>
-    /// ÓëNPCµÄ¹ØÏµ
+    /// ä¸NPCçš„å…³ç³»
     /// </summary>
     public List<int> relationWithNPCs;
     /// <summary>
-    /// ¾üÊÂ³ïÂë
+    /// å†›äº‹ç­¹ç 
     /// </summary>
     public int militaryChips;
     /// <summary>
-    /// ¾üÊÂÖµ
+    /// å†›äº‹å€¼
     /// </summary>
     public int militaryValue;
 }
