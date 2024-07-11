@@ -17,6 +17,10 @@ public class CampParameter : MonoBehaviour
     /// </summary>
     public float politicalValue;
     /// <summary>
+    /// 特殊政治值（美国专用）
+    /// </summary>
+    public float politicalValueP;
+    /// <summary>
     /// 文化值
     /// </summary>
     public float culturalValue;
@@ -29,13 +33,13 @@ public class CampParameter : MonoBehaviour
     /// </summary>
     public float publicTrust;
     /// <summary>
-    /// 对外舆论控制了
-    /// </summary>
-    public float externalControl;
-    /// <summary>
     /// 对内舆论控制了
     /// </summary>
     public float internalControl;
+    /// <summary>
+    /// 对外舆论控制了
+    /// </summary>
+    public float externalControl;
     /// <summary>
     /// 与NPC的关系
     /// </summary>
