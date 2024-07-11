@@ -21,5 +21,9 @@ public class GameManager : MonoBehaviour
         instance = this;
     }
     public CampParameter curCamp;
-    public List<CampParameter> curCampList;
+    public List<CampParameter> campList;
+    public void ChangeCurCamp(int id)
+    {
+        curCamp = campList[id];
+    }
 }
