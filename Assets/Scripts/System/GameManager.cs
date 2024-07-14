@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Properties;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -21,6 +22,12 @@ public class GameManager : MonoBehaviour
         }
         instance = this;
         ChangeCurCamp(0);
+        rounds = 1;
+    }
+    public int rounds;
+    public void NextRound()
+    {
+        rounds++;
     }
     public CampParameter curCamp;
     public List<CampParameter> campList;
