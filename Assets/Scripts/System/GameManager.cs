@@ -21,13 +21,25 @@ public class GameManager : MonoBehaviour
             return;
         }
         instance = this;
+        Initialize();
+    }
+    private void Initialize()
+    {
         ChangeCurCamp(0);
         rounds = 1;
+        for (int i = 0; i < campList.Count; i++)
+        {
+            campList[i].haveActed = false;
+        }
     }
     public int rounds;
     public void NextRound()
     {
         rounds++;
+        for(int i = 0; i < campList.Count; i++)
+        {
+            campList[i].haveActed = false;
+        }
     }
     public CampParameter curCamp;
     public List<CampParameter> campList;
