@@ -1102,7 +1102,7 @@ MonoBehaviour:
   publicTrustP: -100
   internalControl: 100
   externalControl: 10
-  relationWithNPCs: []
+  relationWithNPCs: 
   militaryChips: 6
   militaryValue: 0
 --- !u!1 &317509126
@@ -1900,7 +1900,7 @@ MonoBehaviour:
   publicTrustP: 30
   internalControl: 40
   externalControl: 100
-  relationWithNPCs: []
+  relationWithNPCs: 
   militaryChips: 6
   militaryValue: 0
 --- !u!1 &637580812
@@ -1957,7 +1957,7 @@ MonoBehaviour:
   publicTrustP: -100
   internalControl: 30
   externalControl: 80
-  relationWithNPCs: []
+  relationWithNPCs: 
   militaryChips: 3
   militaryValue: 0
 --- !u!1 &641871885
@@ -4310,7 +4310,7 @@ MonoBehaviour:
   publicTrustP: -100
   internalControl: 50
   externalControl: 30
-  relationWithNPCs: []
+  relationWithNPCs: 
   militaryChips: 1
   militaryValue: 0
 --- !u!1 &1901266554
