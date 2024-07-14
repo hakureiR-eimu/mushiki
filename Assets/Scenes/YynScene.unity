@@ -1009,7 +1009,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 294431926}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1248685765}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: NextRound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &294431926
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1048,63 +1060,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 294431923}
   m_CullTransparentMesh: 1
---- !u!1 &307263588
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 307263589}
-  - component: {fileID: 307263590}
-  m_Layer: 0
-  m_Name: Chinese Mainland
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &307263589
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 307263588}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 641871886}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &307263590
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 307263588}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8240b74197e9bb74fbd93a1b302f0a5d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  campName: "\u4E2D\u56FD\u5927\u9646"
-  totalEconomy: 180
-  economicIncrement: 5
-  politicalValue: 60
-  culturalValue: 2
-  technologyValue: 4
-  publicTrust: 80
-  publicTrustP: -100
-  internalControl: 100
-  externalControl: 10
-  relationWithNPCs: 
-  militaryChips: 6
-  militaryValue: 0
 --- !u!1 &317509126
 GameObject:
   m_ObjectHideFlags: 0
@@ -1702,8 +1657,9 @@ GameObject:
   - component: {fileID: 514282959}
   - component: {fileID: 514282961}
   - component: {fileID: 514282960}
+  - component: {fileID: 514282962}
   m_Layer: 5
-  m_Name: Area2
+  m_Name: Japan
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1767,6 +1723,31 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 514282958}
   m_CullTransparentMesh: 1
+--- !u!114 &514282962
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 514282958}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8240b74197e9bb74fbd93a1b302f0a5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  campName: "\u65E5\u672C"
+  totalEconomy: 160
+  economicIncrement: 1
+  politicalValue: 50
+  culturalValue: 10
+  technologyValue: 3
+  publicTrust: 70
+  publicTrustP: -100
+  internalControl: 30
+  externalControl: 80
+  relationWithNPCs: 
+  militaryChips: 3
+  militaryValue: 0
 --- !u!1 &596559539
 GameObject:
   m_ObjectHideFlags: 0
@@ -1846,155 +1827,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 596559539}
   m_CullTransparentMesh: 1
---- !u!1 &631629445
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 631629446}
-  - component: {fileID: 631629447}
-  m_Layer: 0
-  m_Name: America
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &631629446
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 631629445}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 641871886}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &631629447
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 631629445}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8240b74197e9bb74fbd93a1b302f0a5d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  campName: "\u7F8E\u56FD"
-  totalEconomy: 200
-  economicIncrement: 2
-  politicalValue: 70
-  culturalValue: 8
-  technologyValue: 5
-  publicTrust: 30
-  publicTrustP: 30
-  internalControl: 40
-  externalControl: 100
-  relationWithNPCs: 
-  militaryChips: 6
-  militaryValue: 0
---- !u!1 &637580812
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 637580813}
-  - component: {fileID: 637580814}
-  m_Layer: 0
-  m_Name: Japan
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &637580813
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 637580812}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 641871886}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &637580814
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 637580812}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8240b74197e9bb74fbd93a1b302f0a5d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  campName: "\u65E5\u672C"
-  totalEconomy: 160
-  economicIncrement: 1
-  politicalValue: 50
-  culturalValue: 10
-  technologyValue: 3
-  publicTrust: 70
-  publicTrustP: -100
-  internalControl: 30
-  externalControl: 80
-  relationWithNPCs: 
-  militaryChips: 3
-  militaryValue: 0
---- !u!1 &641871885
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 641871886}
-  m_Layer: 0
-  m_Name: Areas
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &641871886
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 641871885}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1065.5583, y: 481.02805, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 307263589}
-  - {fileID: 631629446}
-  - {fileID: 637580813}
-  - {fileID: 1843195783}
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &695520410
 GameObject:
   m_ObjectHideFlags: 0
@@ -2400,8 +2232,9 @@ GameObject:
   - component: {fileID: 969478405}
   - component: {fileID: 969478407}
   - component: {fileID: 969478406}
+  - component: {fileID: 969478408}
   m_Layer: 5
-  m_Name: Area1
+  m_Name: America
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2465,6 +2298,31 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 969478404}
   m_CullTransparentMesh: 1
+--- !u!114 &969478408
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 969478404}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8240b74197e9bb74fbd93a1b302f0a5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  campName: "\u7F8E\u56FD"
+  totalEconomy: 200
+  economicIncrement: 2
+  politicalValue: 70
+  culturalValue: 8
+  technologyValue: 5
+  publicTrust: 30
+  publicTrustP: 30
+  internalControl: 40
+  externalControl: 100
+  relationWithNPCs: 
+  militaryChips: 6
+  militaryValue: 0
 --- !u!1 &1126774421
 GameObject:
   m_ObjectHideFlags: 0
@@ -2476,8 +2334,9 @@ GameObject:
   - component: {fileID: 1126774422}
   - component: {fileID: 1126774424}
   - component: {fileID: 1126774423}
+  - component: {fileID: 1126774425}
   m_Layer: 5
-  m_Name: Area3
+  m_Name: Chinese Taiwan
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2541,6 +2400,31 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1126774421}
   m_CullTransparentMesh: 1
+--- !u!114 &1126774425
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1126774421}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8240b74197e9bb74fbd93a1b302f0a5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  campName: "\u4E2D\u56FD\u5927\u9646"
+  totalEconomy: 120
+  economicIncrement: 1
+  politicalValue: 40
+  culturalValue: 1
+  technologyValue: 2
+  publicTrust: 60
+  publicTrustP: -100
+  internalControl: 50
+  externalControl: 30
+  relationWithNPCs: 
+  militaryChips: 1
+  militaryValue: 0
 --- !u!1 &1144040746
 GameObject:
   m_ObjectHideFlags: 0
@@ -2804,12 +2688,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6323e56e70b87184992e3dc3f293717f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rounds: 0
   curCamp: {fileID: 0}
   campList:
-  - {fileID: 307263590}
-  - {fileID: 631629447}
-  - {fileID: 637580814}
-  - {fileID: 1843195784}
+  - {fileID: 1770803598}
+  - {fileID: 969478408}
+  - {fileID: 514282962}
+  - {fileID: 1126774425}
 --- !u!4 &1248685766
 Transform:
   m_ObjectHideFlags: 0
@@ -4191,8 +4076,9 @@ GameObject:
   - component: {fileID: 1770803595}
   - component: {fileID: 1770803597}
   - component: {fileID: 1770803596}
+  - component: {fileID: 1770803598}
   m_Layer: 5
-  m_Name: Area
+  m_Name: Chinese Mainland
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4256,62 +4142,30 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1770803594}
   m_CullTransparentMesh: 1
---- !u!1 &1843195782
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1843195783}
-  - component: {fileID: 1843195784}
-  m_Layer: 0
-  m_Name: Chinese Taiwan
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1843195783
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1843195782}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 641871886}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1843195784
+--- !u!114 &1770803598
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1843195782}
+  m_GameObject: {fileID: 1770803594}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8240b74197e9bb74fbd93a1b302f0a5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   campName: "\u4E2D\u56FD\u5927\u9646"
-  totalEconomy: 120
-  economicIncrement: 1
-  politicalValue: 40
-  culturalValue: 1
-  technologyValue: 2
-  publicTrust: 60
+  totalEconomy: 180
+  economicIncrement: 5
+  politicalValue: 60
+  culturalValue: 2
+  technologyValue: 4
+  publicTrust: 80
   publicTrustP: -100
-  internalControl: 50
-  externalControl: 30
+  internalControl: 100
+  externalControl: 10
   relationWithNPCs: 
-  militaryChips: 1
+  militaryChips: 6
   militaryValue: 0
 --- !u!1 &1901266554
 GameObject:
@@ -4324,6 +4178,7 @@ GameObject:
   - component: {fileID: 1901266555}
   - component: {fileID: 1901266557}
   - component: {fileID: 1901266556}
+  - component: {fileID: 1901266558}
   m_Layer: 5
   m_Name: Rounds
   m_TagString: Untagged
@@ -4389,6 +4244,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1901266554}
   m_CullTransparentMesh: 1
+--- !u!114 &1901266558
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1901266554}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02b45240a323e9448968decf4228b6cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1951278296
 GameObject:
   m_ObjectHideFlags: 0
@@ -5084,4 +4951,3 @@ SceneRoots:
   - {fileID: 1648031970}
   - {fileID: 146361524}
   - {fileID: 1248685766}
-  - {fileID: 641871886}
