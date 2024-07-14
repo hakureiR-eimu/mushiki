@@ -56,4 +56,5 @@ public class CampParameter : MonoBehaviour
     /// 与其他各国的关系
     /// </summary>
     public Dictionary<CampParameter, int> relationValue;
+    public bool haveActed;
 }
