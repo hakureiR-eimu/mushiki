@@ -5,7 +5,7 @@ public class CampParameter : MonoBehaviour
 {
     public string campName;
     /// <summary>
-    /// 经济总量1
+    /// 经济总量
     /// </summary>
     public int totalEconomy;
     /// <summary>
@@ -52,4 +52,8 @@ public class CampParameter : MonoBehaviour
     /// 军事值
     /// </summary>
     public int militaryValue;
+    /// <summary>
+    /// 与其他各国的关系
+    /// </summary>
+    public Dictionary<CampParameter, int> relationValue;
 }
