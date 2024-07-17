@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d28f5f63830833c4c9fba320eac4ae92, type: 3}
   m_Name: SE005
   m_EditorClassIdentifier: 
-  id: 
+  id: SE005
   strategyName: "\u6587\u5316\u5BBD\u677E"
   inTotalEconomy: 0
   inEconomicIncrement: 0
