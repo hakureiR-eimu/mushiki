@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-[CreateAssetMenu(fileName ="Simple",menuName ="Strategy/Economy/Simple")]
+[CreateAssetMenu(fileName ="SE001",menuName ="Strategy/Economy/Simple")]
 public class EconomyStrategy : Strategy
 {
     [Header("输入")]
