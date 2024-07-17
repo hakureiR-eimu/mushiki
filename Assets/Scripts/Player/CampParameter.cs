@@ -56,5 +56,12 @@ public class CampParameter : MonoBehaviour
     /// 与其他各国的关系
     /// </summary>
     public Dictionary<CampParameter, int> relationValue;
+    /// <summary>
+    /// 本回合使用过策略
+    /// </summary>
     public bool haveActed;
+    /// <summary>
+    /// 本回合解锁过国策树
+    /// </summary>
+    public bool haveUpgrade;
 }
