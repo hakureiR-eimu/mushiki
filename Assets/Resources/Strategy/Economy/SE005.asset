@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d28f5f63830833c4c9fba320eac4ae92, type: 3}
+  m_Name: SE005
+  m_EditorClassIdentifier: 
+  id: SE005
+  strategyName: "\u6587\u5316\u5BBD\u677E"
+  inTotalEconomy: 0
+  inEconomicIncrement: 0
+  inPoliticalValue: 1
+  inCulturalValue: 0
+  inTechnologyValue: 0
+  inPublicTrust: 0
+  inInternalControl: 5
+  inExternalControl: 0
+  outTotalEconomy: 0
+  outEconomicIncrement: 0
+  outPoliticalValue: 0
+  outCulturalValue: 1
+  outTechnologyValue: 0
+  outPublicTrust: 0
+  outInternalControl: 0
+  outExternalControl: 5

@@ -40,6 +40,7 @@ public class GameManager : MonoBehaviour
         for(int i = 0; i < campList.Count; i++)
         {
             campList[i].haveActed = false;
+            campList[i].haveUpgrade = false;
         }
     }
     public CampParameter curCamp;

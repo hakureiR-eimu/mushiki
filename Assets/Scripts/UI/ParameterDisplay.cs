@@ -5,7 +5,6 @@ using UnityEngine.UI;
 
 public class ParameterDisplay : MonoBehaviour
 {
-    //
     public Text totalEconomy;
     public Text economicIncrement;
     public Text politicalValue;
