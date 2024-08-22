@@ -45,4 +45,16 @@ public class UIManager
         }
     }
 
+    /// <summary>
+    /// 销毁一个UI对象
+    /// </summary>
+    /// <param name="_type">UI信息</param>
+    public void DestroyUI(UIType _type)
+    {
+        if(dicUI.ContainsKey(_type))
+        {
+            dicUI.Remove(_type);
+        }
+    }
+
 }
