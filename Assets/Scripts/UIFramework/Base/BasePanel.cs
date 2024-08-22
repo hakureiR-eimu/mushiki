@@ -9,6 +9,10 @@ public class BasePanel
 {
     public UIType UIType { get; private set; }
 
+    public BasePanel(UIType _uiType) { 
+        this.UIType = _uiType;
+    }
+
     /// <summary>
     /// UI进入时执行的操作，只会执行一次
     /// </summary>
