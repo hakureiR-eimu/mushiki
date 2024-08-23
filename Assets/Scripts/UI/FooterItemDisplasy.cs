@@ -3,13 +3,14 @@ using UnityEngine.UI;
 
 public class FooterItemDisplasy : MonoBehaviour
 {
-    public Text FooterItemNameText;
-    public Text FooterItemValText;
+    public Text footerItemNameText;
+    public Text footerItemValText;
 
-    public FootItem FootItem;
+    public FootItem footItem;
     // Start is called before the first frame update
     void Start()
     {
+
         ShowItem();
     }
 
@@ -20,7 +21,11 @@ public class FooterItemDisplasy : MonoBehaviour
     }
     void ShowItem()
     {
-        FooterItemNameText.text = FootItem.itemName;
-        FooterItemValText.text = FootItem.itemVal.ToString();
+
+        footerItemNameText.text = footItem.itemName;
+        if (footItem.itemVal.HasValue)
+        {
+            footerItemValText.text = footItem.itemVal.ToString();
+        }
     }
 }
