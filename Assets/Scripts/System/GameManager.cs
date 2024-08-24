@@ -96,11 +96,12 @@ public class GameManager : MonoBehaviour
         data = new LoadDataDemo();
         influenceLog = new List<string>();
         //data.Test();
+        Newspaper.SetActive(false);
     }
     public void ChangePlayer(int _playID)
     {
         playerID = _playID;
     }
 
-
+    public GameObject Newspaper;
 }

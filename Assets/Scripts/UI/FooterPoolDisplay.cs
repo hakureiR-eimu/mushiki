@@ -129,6 +129,7 @@ public class FooterPoolDisplay : MonoBehaviour
 
         playerLog += ",";
         playerLog += buttonText.text;
+        playerLog += ",受到影响";
 
         Debug.Log(playerLog);
 
