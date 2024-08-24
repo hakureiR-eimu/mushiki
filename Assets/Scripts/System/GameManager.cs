@@ -1,7 +1,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+enum playerState
+{
+    IsInfluenced,
+    IsEndTurn
+}
 public class GameManager : MonoBehaviour
 {
     //
@@ -35,6 +39,19 @@ public class GameManager : MonoBehaviour
     public int rounds;
     public void NextRound()
     {
+        int isEveryoneNotEnd = 0;
+        for (int i = 0; i < campList.Count; ++i)
+        {
+            if (curCamp.haveActed == false)
+            {
+                isEveryoneNotEnd = 1;
+            }
+        }
+        if (isEveryoneNotEnd == 1)
+        {
+            Debug.Log("请等待所有人完成操作再结束回合");
+            return;
+        }
         rounds++;
         for (int i = 0; i < campList.Count; i++)
         {
@@ -46,6 +63,7 @@ public class GameManager : MonoBehaviour
     public List<CampParameter> campList;
     public void ChangeCurCamp(int id)
     {
+
         curCamp = campList[id];
 
         ChangePlayer(id); //修改当前国家
@@ -65,14 +83,19 @@ public class GameManager : MonoBehaviour
                 campList[i].GetComponent<Image>().color = tempColor;
             }
         }
+
+
     }
     public int playerID;
     public int playerPhase;// 0:经济 1:舆情
     public LoadDataDemo data;
+    public List<string> influenceLog;
+
     public void Init()
     {
         data = new LoadDataDemo();
-        data.Test();
+        influenceLog = new List<string>();
+        //data.Test();
     }
     public void ChangePlayer(int _playID)
     {

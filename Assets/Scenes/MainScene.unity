@@ -217,7 +217,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1260755011}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: FooterPoolDisplay, Assembly-CSharp
         m_MethodName: onClickUpper
         m_Mode: 1
@@ -892,7 +892,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1260755011}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: FooterPoolDisplay, Assembly-CSharp
         m_MethodName: onClickUpper
         m_Mode: 1
@@ -1949,6 +1949,7 @@ GameObject:
   m_Component:
   - component: {fileID: 383738278}
   - component: {fileID: 383738279}
+  - component: {fileID: 383738280}
   m_Layer: 5
   m_Name: FooterControlPool
   m_TagString: Untagged
@@ -2001,6 +2002,21 @@ MonoBehaviour:
   m_Spacing: {x: 50, y: 5}
   m_Constraint: 2
   m_ConstraintCount: 1
+--- !u!114 &383738280
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 383738277}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7e4a00b02736464cb7cc1360998f353, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  footerItemPrefeb: {fileID: 2821145551795491403, guid: 42a67377447839c4f834194f934989e9, type: 3}
+  footerPool: {fileID: 1917680511}
+  playerID: 0
 --- !u!1 &433880757
 GameObject:
   m_ObjectHideFlags: 0
@@ -3337,7 +3353,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1248685766}
   - component: {fileID: 1248685765}
-  - component: {fileID: 1248685767}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -3366,6 +3381,7 @@ MonoBehaviour:
   - {fileID: 1126774425}
   playerID: 0
   playerPhase: 0
+  influenceLog: []
 --- !u!4 &1248685766
 Transform:
   m_ObjectHideFlags: 0
@@ -3381,18 +3397,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1248685767
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1248685764}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 11a91a1f19f343f4698ea5c51ca3a5f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1260755008
 GameObject:
   m_ObjectHideFlags: 0
@@ -3402,10 +3406,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1260755009}
-  - component: {fileID: 1260755010}
   - component: {fileID: 1260755011}
   m_Layer: 0
-  m_Name: InnerDataStore
+  m_Name: DataStore
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3426,19 +3429,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1260755010
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1260755008}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7bf14da9503cc614a84083b9c7fbfd9d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  innerData: {fileID: 4900000, guid: 332a4223387229840bf656ebc1ad7ce4, type: 3}
 --- !u!114 &1260755011
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3628,7 +3618,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1260755011}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: FooterPoolDisplay, Assembly-CSharp
         m_MethodName: onClickUpper
         m_Mode: 1
@@ -5514,7 +5504,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1901266555
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5903,7 +5893,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1260755011}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: FooterPoolDisplay, Assembly-CSharp
         m_MethodName: onClickUpper
         m_Mode: 1

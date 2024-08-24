@@ -5,15 +5,23 @@ public class OnClickFooterItem : MonoBehaviour
 {
     void Start()
     {
-        this.GetComponent<Button>().onClick.AddListener
+        this.GetComponent<Button>()
+            .onClick
+            .AddListener
             (delegate ()
             {
                 OnClick(this.gameObject);
             });
     }
 
+    void Update()
+    {
+
+    }
+
     public void OnClick(GameObject _obj)
     {
-        print("点击了按钮：" + _obj.name);
+        Debug.Log("点击了按钮：" + _obj.name);
+
     }
 }

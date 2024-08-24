@@ -66,6 +66,10 @@ public class FooterPoolDisplay : MonoBehaviour
             GameObject newFooterItem = GameObject.Instantiate(footerItemPrefeb, footerPool.transform);
             newFooterItem.GetComponent<FooterItemDisplasy>().footItem = GameManager.Instance.data.GetPlayerData(playerID)[i];
 
+            Button buttonComponent = newFooterItem.GetComponent<Button>();
+            int index = i;
+            buttonComponent.onClick.AddListener(() => OnButtonClick(index));
+
             footItems.Add(newFooterItem);
         }
     }
@@ -75,6 +79,10 @@ public class FooterPoolDisplay : MonoBehaviour
         {
             GameObject newFooterItem = GameObject.Instantiate(footerItemPrefeb, footerPool.transform);
             newFooterItem.GetComponent<FooterItemDisplasy>().footItem = GameManager.Instance.data.GetPlayerData(playerID)[i];
+
+            Button buttonComponent = newFooterItem.GetComponent<Button>();
+            int index = i - 5;
+            buttonComponent.onClick.AddListener(() => OnButtonClick(index));
 
             footItems.Add(newFooterItem);
         }
@@ -92,5 +100,40 @@ public class FooterPoolDisplay : MonoBehaviour
     {
         string objectName = gameObject.name;
         Debug.Log(objectName);
+    }
+    void OnButtonClick(int index)
+    {
+        if (GameManager.Instance.curCamp.haveActed == true)
+        {
+            Debug.Log("本回合已经操作过啦！");
+            return;
+
+        }
+
+        //Debug.Log("点击了按钮" + index);
+        Text buttonText = footItems[index].GetComponentInChildren<Text>();
+        //if (buttonText != null)
+        //{
+        //    Debug.Log("按钮的文本内容是:" + buttonText.text);
+        //}
+
+        string playerLog = "";
+        if (GameManager.Instance.playerID == 3)
+        {
+            playerLog += "台湾";
+        }
+        else
+        {
+            playerLog += GameManager.Instance.curCamp.campName;
+        }
+
+        playerLog += ",";
+        playerLog += buttonText.text;
+
+        Debug.Log(playerLog);
+
+        GameManager.Instance.influenceLog.Add(playerLog);
+
+        GameManager.Instance.curCamp.haveActed = true;
     }
 }
