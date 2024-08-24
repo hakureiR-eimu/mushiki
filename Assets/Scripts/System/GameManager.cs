@@ -21,6 +21,7 @@ public class GameManager : MonoBehaviour
         }
         instance = this;
         Initialize();
+        Init();
     }
     private void Initialize()
     {
@@ -65,16 +66,18 @@ public class GameManager : MonoBehaviour
             }
         }
     }
-
     public int playerID;
+    public int playerPhase;// 0:经济 1:舆情
+    public LoadDataDemo data;
+    public void Init()
+    {
+        data = new LoadDataDemo();
+        data.Test();
+    }
     public void ChangePlayer(int _playID)
     {
         playerID = _playID;
-        TestPlayer();
     }
-    public void TestPlayer()
-    {
-        Debug.Log(playerID);
-    }
-    public int playerPhase;// 0:经济 1:舆情
+
+
 }

@@ -1,0 +1,148 @@
+{
+    "camps": [
+        {
+            "id": 0,
+            "name": "China",
+            "economic": 180,
+            "economicIncrease": 5,
+            "culturalPoints": 2,
+            "politicalPoints": 60,
+            "technologyPoints": 4,
+            "popTrustLevel": 80,
+            "propagandaAbilityInside": 100,
+            "propagandaAbilityOutside": 10,
+            "militaryNum": 6,
+            "militartPoints": 0,
+            "relationship": [
+                1000,
+                -10,
+                0,
+                0,
+                70,
+                80,
+                30,
+                30,
+                0,
+                50,
+                -20,
+                50
+            ]
+        },
+        {
+            "id": 1,
+            "name": "Taiwan",
+            "economic": 120,
+            "economicIncrease": 1,
+            "culturalPoints": 1,
+            "politicalPoints": 40,
+            "technologyPoints": 2,
+            "popTrustLevel": 60,
+            "propagandaAbilityInside": 50,
+            "propagandaAbilityOutside": 30,
+            "militaryNum": 1,
+            "militartPoints": 0,
+            "relationship": [
+                -10,
+                null,
+                70,
+                60,
+                0,
+                -20,
+                -10,
+                0,
+                0,
+                20,
+                10,
+                null
+            ]
+        },
+        {
+            "id": 2,
+            "name": "Japan",
+            "economic": 160,
+            "economicIncrease": 1,
+            "culturalPoints": 10,
+            "politicalPoints": 50,
+            "technologyPoints": 3,
+            "popTrustLevel": 70,
+            "propagandaAbilityInside": 30,
+            "propagandaAbilityOutside": 80,
+            "militaryNum": 3,
+            "militartPoints": 0,
+            "relationship": [
+                0,
+                70,
+                null,
+                30,
+                -10,
+                -100,
+                10,
+                20,
+                30,
+                30,
+                20,
+                null
+            ]
+        },
+        {
+            "id": 3,
+            "name": "United States",
+            "economic": 200,
+            "economicIncrease": 2,
+            "culturalPoints": 8,
+            "politicalPoints": 70,
+            "technologyPoints": 5,
+            "popTrustLevel": 30,
+            "propagandaAbilityInside": 40,
+            "propagandaAbilityOutside": 100,
+            "militaryNum": 6,
+            "militartPoints": 0,
+            "relationship": [
+                0,
+                60,
+                30,
+                null,
+                -70,
+                -90,
+                40,
+                40,
+                10,
+                10,
+                80,
+                null
+            ]
+        },
+        {
+            "id": 4,
+            "name": "Russia"
+        },
+        {
+            "id": 5,
+            "name": "North Korea"
+        },
+        {
+            "id": 6,
+            "name": "South Korea"
+        },
+        {
+            "id": 7,
+            "name": "Europe Union"
+        },
+        {
+            "id": 8,
+            "name": "India"
+        },
+        {
+            "id": 9,
+            "name": "Southeast Asian Nations"
+        },
+        {
+            "id": 10,
+            "name": "Australia"
+        },
+        {
+            "id": 11,
+            "name": "third world countries"
+        }
+    ]
+}

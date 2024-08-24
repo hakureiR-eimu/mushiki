@@ -8,13 +8,13 @@ public class FooterPoolDisplay : MonoBehaviour
     public GameObject footerPool;
     public int playerID;
 
-    InnerDataStore innerDataStore;
+
 
     List<GameObject> footItems = new List<GameObject>();
     // Start is called before the first frame update
     void Start()
     {
-        innerDataStore = GetComponent<InnerDataStore>();
+
     }
 
     // Update is called once per frame
@@ -40,22 +40,22 @@ public class FooterPoolDisplay : MonoBehaviour
     {
         playerID = GameManager.Instance.playerID;
         ClearFootItems();
-        int index = -1;
+
         /*GetObjectName();*/
         if (_button.gameObject.name == "FooterControlIcon1")
         {
             GameManager.Instance.playerPhase = 0;
-            index = 1;
+
             RenderInnerEconomy();
 
         }
         else if (_button.gameObject.name == "FooterControlIcon2")
         {
             GameManager.Instance.playerPhase = 1;
-            index = 2;
+
             RenderInnerSociety();
         }
-        Debug.Log(index);
+
 
     }
 
@@ -64,7 +64,7 @@ public class FooterPoolDisplay : MonoBehaviour
         for (int i = 0; i < 5; ++i)
         {
             GameObject newFooterItem = GameObject.Instantiate(footerItemPrefeb, footerPool.transform);
-            newFooterItem.GetComponent<FooterItemDisplasy>().footItem = innerDataStore.GetPlayerData(playerID)[i];
+            newFooterItem.GetComponent<FooterItemDisplasy>().footItem = GameManager.Instance.data.GetPlayerData(playerID)[i];
 
             footItems.Add(newFooterItem);
         }
@@ -74,12 +74,12 @@ public class FooterPoolDisplay : MonoBehaviour
         for (int i = 5; i < 10; ++i)
         {
             GameObject newFooterItem = GameObject.Instantiate(footerItemPrefeb, footerPool.transform);
-            newFooterItem.GetComponent<FooterItemDisplasy>().footItem = innerDataStore.GetPlayerData(playerID)[i];
+            newFooterItem.GetComponent<FooterItemDisplasy>().footItem = GameManager.Instance.data.GetPlayerData(playerID)[i];
 
             footItems.Add(newFooterItem);
         }
     }
-    public void ClearFootItems()
+    private void ClearFootItems()
     {
         foreach (var item in footItems)
         {
