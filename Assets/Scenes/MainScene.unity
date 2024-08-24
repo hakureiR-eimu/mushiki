@@ -217,6 +217,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1260755011}
+        m_TargetAssemblyTypeName: FooterPoolDisplay, Assembly-CSharp
+        m_MethodName: onClickUpper
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &100983437
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -876,6 +888,18 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1260755011}
+        m_TargetAssemblyTypeName: FooterPoolDisplay, Assembly-CSharp
+        m_MethodName: onClickUpper
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -3313,6 +3337,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1248685766}
   - component: {fileID: 1248685765}
+  - component: {fileID: 1248685767}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -3339,6 +3364,8 @@ MonoBehaviour:
   - {fileID: 969478408}
   - {fileID: 514282962}
   - {fileID: 1126774425}
+  playerID: 0
+  playerPhase: 0
 --- !u!4 &1248685766
 Transform:
   m_ObjectHideFlags: 0
@@ -3354,6 +3381,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1248685767
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1248685764}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11a91a1f19f343f4698ea5c51ca3a5f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1260755008
 GameObject:
   m_ObjectHideFlags: 0
@@ -3414,6 +3453,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   footerItemPrefeb: {fileID: 2821145551795491403, guid: 42a67377447839c4f834194f934989e9, type: 3}
   footerPool: {fileID: 1917680511}
+  playerID: 0
 --- !u!1 &1294038213
 GameObject:
   m_ObjectHideFlags: 0
@@ -3580,6 +3620,18 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
         m_MethodName: ChangeCurCamp
         m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1260755011}
+        m_TargetAssemblyTypeName: FooterPoolDisplay, Assembly-CSharp
+        m_MethodName: onClickUpper
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -5847,6 +5899,18 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1260755011}
+        m_TargetAssemblyTypeName: FooterPoolDisplay, Assembly-CSharp
+        m_MethodName: onClickUpper
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0

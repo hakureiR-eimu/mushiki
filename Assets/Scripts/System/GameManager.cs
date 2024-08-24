@@ -1,6 +1,4 @@
-using System.Collections;
 using System.Collections.Generic;
-using Unity.Properties;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -9,15 +7,15 @@ public class GameManager : MonoBehaviour
     //
     private static GameManager instance;
     public static GameManager Instance
-    { 
-        get 
-        { 
-            return instance; 
+    {
+        get
+        {
+            return instance;
         }
     }
     private void Awake()
     {
-        if(instance!=null)
+        if (instance != null)
         {
             return;
         }
@@ -37,7 +35,7 @@ public class GameManager : MonoBehaviour
     public void NextRound()
     {
         rounds++;
-        for(int i = 0; i < campList.Count; i++)
+        for (int i = 0; i < campList.Count; i++)
         {
             campList[i].haveActed = false;
             campList[i].haveUpgrade = false;
@@ -48,11 +46,14 @@ public class GameManager : MonoBehaviour
     public void ChangeCurCamp(int id)
     {
         curCamp = campList[id];
+
+        ChangePlayer(id); //修改当前国家
+
         for (int i = 0; i < campList.Count; i++)
         {
-            if(i==id)
+            if (i == id)
             {
-                Color tempColor=campList[i].GetComponent<Image>().color;
+                Color tempColor = campList[i].GetComponent<Image>().color;
                 tempColor = new Color(tempColor.r, tempColor.g, tempColor.b, 1f);
                 campList[i].GetComponent<Image>().color = tempColor;
             }
@@ -64,4 +65,16 @@ public class GameManager : MonoBehaviour
             }
         }
     }
+
+    public int playerID;
+    public void ChangePlayer(int _playID)
+    {
+        playerID = _playID;
+        TestPlayer();
+    }
+    public void TestPlayer()
+    {
+        Debug.Log(playerID);
+    }
+    public int playerPhase;// 0:经济 1:舆情
 }
